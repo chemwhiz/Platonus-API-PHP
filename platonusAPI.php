@@ -76,22 +76,6 @@ class Platonus {
 
         return true;
     }
-    
-    public function getAuthToken() {
-        return $this->authToken;
-    }
-
-    public function getSid() {
-        return $this->sid;
-    }
-    
-    public function setSid($sid) {
-        $this->sid = $sid;
-    }
-    
-    public function setAuthToken($authToken) {
-        $this->authToken = $authToken;
-    }
 
     public function getJournal($year, $semester, $language = 'ru') {
         return $this->request($this->endpoints['journal'] . "/$year/$semester/$language");
